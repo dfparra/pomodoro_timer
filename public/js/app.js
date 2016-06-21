@@ -8,6 +8,7 @@ $(document).ready(function(){
   // console.log(minutes);
   // console.log(seconds);
   start.on('click',startCountdown);
+  breakBtn.on('click',takeABreak);
 
   function startCountdown(){
     setInterval(function(){
@@ -30,6 +31,10 @@ $(document).ready(function(){
 
       // console.log(typeof +secondsVal);
     }, 1000)
+  }
+
+  function takeABreak(){
+    alert("take a break");
   }
 
 });
